@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matematika Diskrit</title>
 </head>
-<body>
-    <h1>Matematika Diskrit</h1> <p>Page created by: Rio Puji Nugroho &copy; 2026</p> <br>
-    <!-- Navigasi -->
-    <a href="#Proposisi">Proposisi</a> | <a href="#operator-logika">Operator Logika</a> | <a href="true-table.html">Tabel Kebenaran</a>
-    <hr>
-    
-    <section id="Proposisi">
-           <h2><u>Proposisi</u></h2>
-    <p>Proposisi adalah pernyataan deklaratif yang bernilai benar (true) atau salah (false). <br>Contoh :</p>
-    <ul>
-        <li>"Hari ini hujan." (benar atau salah)</li>
-        <li>"2 + 2 = 4." (benar)</li>
-        <li>"10 > 5." (benar)</li>
-        <li>"Air membeku pada suhu 0°C." (benar)</li>
-    </ul>
-    <p>Bukan Proposisi :</p>
-    <ul>
-        <li>Siapa nama anda? (karena ini Pertanyaan)</li>
-        <li>x + 4 = 10 karena ini nilai x nya belum diketahui</li>
-        <li>Kopi ini rasanya enak (Karena pernyataan ini subjektif tidak objektif)</li>
-        <li>Tutup pintu ini segera! (karena ini perintah, bukan pernyataan)</li>
-    </ul>
 
-    <h2><u>Kategori Proposisi (Proposisi Tunggal dan Proposisi Majemuk)</u></h2>
-    <p><b>Proposisi tunggal</b> adalah proposisi yang tidak mengandung operator logika. <br>Contoh :</p>
-    <ul>
-        <li>"Hari ini hujan." (benar atau salah)</li>
-        <li>"2 + 2 = 4." (benar)</li>
-    </ul>
-    <p><b>Proposisi majemuk</b> adalah proposisi yang terbentuk dari dua atau lebih proposisi tunggal yang dihubungkan dengan operator logika. <br>Contoh :</p>
-    <ul>
-        <li>"Hari ini hujan dan saya membawa payung." (menggunakan operator "dan")</li>
-        <li>"Hari ini hujan atau saya membawa payung." (menggunakan operator "atau")</li>
-    </ul>
+<body>
+    <h1>Matematika Diskrit</h1>
+    <p>Page created by: Rio Puji Nugroho &copy; 2026</p> <br>
+    <!-- Navigasi -->
+    <a href="#Proposisi">Proposisi</a> | <a href="#operator-logika">Operator Logika</a> | <a
+        href="true-table.html">Tabel Kebenaran</a>
+    <hr>
+
+    <section id="Proposisi">
+        <h2><u>Proposisi</u></h2>
+        <p>Proposisi adalah pernyataan deklaratif yang bernilai benar (true) atau salah (false). <br>Contoh :</p>
+        <ul>
+            <li>"Hari ini hujan." (benar atau salah)</li>
+            <li>"2 + 2 = 4." (benar)</li>
+            <li>"10 > 5." (benar)</li>
+            <li>"Air membeku pada suhu 0°C." (benar)</li>
+        </ul>
+        <p>Bukan Proposisi :</p>
+        <ul>
+            <li>Siapa nama anda? (karena ini Pertanyaan)</li>
+            <li>x + 4 = 10 karena ini nilai x nya belum diketahui</li>
+            <li>Kopi ini rasanya enak (Karena pernyataan ini subjektif tidak objektif)</li>
+            <li>Tutup pintu ini segera! (karena ini perintah, bukan pernyataan)</li>
+        </ul>
+
+        <h2><u>Kategori Proposisi (Proposisi Tunggal dan Proposisi Majemuk)</u></h2>
+        <p><b>Proposisi tunggal</b> adalah proposisi yang tidak mengandung operator logika. <br>Contoh :</p>
+        <ul>
+            <li>"Hari ini hujan." (benar atau salah)</li>
+            <li>"2 + 2 = 4." (benar)</li>
+        </ul>
+        <p><b>Proposisi majemuk</b> adalah proposisi yang terbentuk dari dua atau lebih proposisi tunggal yang
+            dihubungkan dengan operator logika. <br>Contoh :</p>
+        <ul>
+            <li>"Hari ini hujan dan saya membawa payung." (menggunakan operator "dan")</li>
+            <li>"Hari ini hujan atau saya membawa payung." (menggunakan operator "atau")</li>
+        </ul>
     </section>
 
     <section id="operator-logika">
@@ -59,15 +64,73 @@
         <p>Universal (&forall;) : Benar jika semua elemen memenuhi syarat tertentu</p>
         <p>Eksistensial (&exist;) : Benar jika ada setidaknya satu elemen yang memenuhi syarat tertentu</p>
 
-        <p><b>2. Konjungsi (&#8743;)</b> (AND)</p>
-        <p>Operator logika yang menggabungkan dua proposisi tunggal menjadi satu proposisi majemuk dengan menggunakan kata hubung "dan".</p>
+        <!-- Konjungsi -->
+        <p><b>2. Konjungsi (&#8743;) (AND)</b></p>
+        <p>Operator logika yang menggabungkan dua proposisi tunggal menjadi satu proposisi majemuk dengan menggunakan
+            kata hubung "dan".</p>
+        <p>Konjungsi hanya akan bernilai BENAR jika kedua proposisi penyusunnya bernilai <b>BENAR</b>. Jika salah satu
+            atau keduanya bernilai salah, maka hasil konjungsinya otomatis <b>SALAH</b>.</p>
+
+        <p>Contoh :</p>
+        <ul>
+            <li><i>P</i>: "Budi memakai baju putih." (Benar)</li>
+            <li><i>Q</i>: "Budi memakai celna hitam." (Benar)</li>
+            <li><i>P &#8743; Q:</i> "Budi memakai baju putih dan Budi memakai celana hitam"</li>
+            <li>Jika Budi memakai baju putih tetapi celananya biru, maka pernyataan $p \land q$ tersebut menjadi SALAH.
+            </li>
+
+
+        </ul>
+
+        <h2><b><u>Hukum De Morgan</u> </b></h2>
+        <p>Hukum De Morgan untuk negasi dari operasi AND (konjungsi) menyatakan bahwa ingkaran dari dua pernyataan yang
+            dihubungkan dengan kata "dan" sama dengan gabungan ingkaran dari masing-masing pernyataan tersebut
+            menggunakan kata "atau".</p>
+        <p>Contoh : </p>
+        <ul>
+            <li> Jika ada &not; (P &#8743; Q ) maka berdasarkan hukum de morgan menjadi -> &not; P ∨ &not; Q </li>
+        </ul>
+
+        <h2>
+            <b>
+                <u>
+                    Hukum Idempoten
+                </u>
+            </b>
+        </h2>
+        <p>Hukum Idempoten itu konsepnya jauh lebih gampang lagi, cok! Intinya adalah "operasi yang tidak mengubah
+            nilai", mau dilakukan berapa kali pun hasilnya tetap sama saja.</p>
+        <p>Contoh : </p>
+        <ul>
+            <li>Jika P &#8743; P maka berdasarkan hukum Idmpoten
+                adalah karena hasil penyataan itu sendiri yaitu P</li>
+        </ul>
+
+        <h2><u>Hukum Komutatif , Asosiatif ,dan Distributif</u></h2>
+
+        <p><b>Hukum Komutatif</b></p>
+        <p>Hukum Komutatif adalah salah satu hukum dasar dalam logika matematika yang konsep utamanya sangat sederhana:
+            urutan tidak mengubah hasil.</p>
+        <p>Contoh : </p>
+
+        <ul>
+            <li><b>Contoh Ekspresi Kiri (p &and; q):</b> "Hari ini hujan <b>DAN</b> saya membawa payung."</li>
+            <li><b>Contoh Ekspresi Kanan (q &and; p):</b> "Saya membawa payung <b>DAN</b> hari ini hujan."</li>
+            <li><b>Kesimpulan:</b> Kedua pernyataan di atas memiliki nilai yang sama atau <b>EKUIVALEN</b>.</li>
+        </ul>
+
+
+
+
 
     </section>
 
- 
+
+
 
 
 
 
 </body>
+
 </html>
