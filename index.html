@@ -10,13 +10,13 @@
 
 <body>
     <h1>Matematika Diskrit</h1>
-    <p>Page created by: Rio Puji Nugroho &copy; 2026</p> <br>
+    <p>Page created by: Rio Puji Nugroho &copy; 2026</p> <p id="last-updated">Last Updated: <span id="commit-date">Loading...</span></p>
     <!-- Tempat label tanggal akan ditampilkan -->
-    <p id="last-updated">Last Updated: <span id="commit-date">Loading...</span></p>
+    
 
     <!-- Navigasi -->
     <a href="#Proposisi">Proposisi</a> | <a href="#operator-logika">Operator Logika</a> | <a
-        href="true-table.html">Tabel Kebenaran</a>
+        href="true-table.html">Tabel Kebenaran</a> | <a href="#komutatif">Hukum Komutatif</a>
     <hr>
 
     <section id="Proposisi">
@@ -106,34 +106,70 @@
             nilai", mau dilakukan berapa kali pun hasilnya tetap sama saja.</p>
         <p>Contoh : </p>
         <ul>
-            <li>Jika P &#8743; P maka berdasarkan hukum Idmpoten
+            <li>Jika P &#8743; P maka berdasarkan hukum Idempoten
                 adalah karena hasil penyataan itu sendiri yaitu P</li>
         </ul>
+    </section>
+
+    <section id="komutatif">
+         <!-- Komutatif -->
 
         <h2><u>Hukum Komutatif , Asosiatif ,dan Distributif</u></h2>
 
-        <p><b>Hukum Komutatif</b></p>
+        <p><b>Hukum Komutatif (Mengurutkan)</b></p>
         <p>Hukum Komutatif adalah salah satu hukum dasar dalam logika matematika yang konsep utamanya sangat sederhana:
-            urutan tidak mengubah hasil.</p>
+            urutan tidak mengubah hasil. dan hukum ini tidak berlaku untuk operator logika <b>IMPLIKASI</b></p>
         <p>Contoh : </p>
 
         <ul>
             <li><b>Contoh Ekspresi Kiri (p &and; q):</b> "Hari ini hujan <b>DAN</b> saya membawa payung."</li>
             <li><b>Contoh Ekspresi Kanan (q &and; p):</b> "Saya membawa payung <b>DAN</b> hari ini hujan."</li>
             <li><b>Kesimpulan:</b> Kedua pernyataan di atas memiliki nilai yang sama atau <b>EKUIVALEN</b>.</li>
+          
+        </ul>
+
+        <p>Bentuk Umum : </p>
+        <ul>
+            <li>Penjumlahan : a + b = b + a</li>
+            <li>Perkalian : a x b = b x a</li>
         </ul>
 
 
+        <p><b>Hukum Asosiatif (Mengelompokkan)</b></p>
+        <p>Sifat operasi hitung yang menyatakan bahwa pengelompokan urutan pengerjaan tidak akan mengubah hasil akhir, asalkan operasi yang digunakan sama.</p>
 
+        <p>Bentuk Umum :</p>
+        <ul>
+            <li>Perjumlahan : (a + b) + c = a + (b + c)</li>
+            <li>Perkalian :  (a x b) x c = a x (b x c)</li>
+        </ul>
 
+        <p>Bentuk Proposisi :</p>
+        <ul>
+            <li>Asosisatif Negasi (NOT): (P &not; Q) &not; R = P &not; (Q &not; R) </li>
+            <li>Asosiatif Konjungsi (AND): (P &#8743; Q) &#8743; R = P &#8743; (Q &#8743; R)  </li>
+            <li>Catatan : Hukum asosiatif tidak berlaku untuk operator logika Implikasi dan Biimplikasi</li>
+        </ul>
 
+        <p><b>Hukum Distributif (Penyebaran)</b></p>
+        <p>Sifat operasi hitung yang menyatakan bahwa suatu operasi dapat disebarkan (didistribusikan) ke dalam operasi lainnya yang berada di dalam tanda kurung.</p>
 
+        <p>Bentuk Umum :</p>
+        <ul>
+            <li>a x (b + c) = (a x b) + (a x c)</li>
+        </ul>
+
+        <p>Bentuk Proposisi :</p>
+        <ul>
+            <li>p &#8743; (q &#8744; r) = (p &#8743; q) &#8744; (p &#8743; r)</li>
+            <li>p &#8744; (q &#8743; r) = (p &#8744; q) &#8744; (p &#8743; r)</li>
+        </ul>
+
+        
     </section>
 
 
-
-
- <scrip src="script.js"></scrip>
+ <script src="script.js"></script>
 
 
 </body>
