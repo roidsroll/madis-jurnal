@@ -16,7 +16,7 @@
 
     <!-- Navigasi -->
     <a href="#Proposisi">Proposisi</a> | <a href="#operator-logika">Operator Logika</a> | <a
-        href="true-table.html">Tabel Kebenaran</a> | <a href="#komutatif">Hukum Komutatif</a>
+        href="true-table.html">Tabel Kebenaran</a> | <a href="#komutatif">Hukum Komutatif</a> | <a href="#kuantor">Kuantor</a> | <a href="#hukum">Hukum De Morgan</a>
     <hr>
 
     <section id="Proposisi">
@@ -63,10 +63,7 @@
             <li>Pernyataan 2 : "Saya membawa payung."</li>
             <li>Negasi dari Pernyataan 2 : "Saya tidak membawa payung."</li>
         </ul>
-        <p><b>Kuantor (Universal : &forall;) , (Eksistensial : &exist;)</b></p>
-
-        <p>Universal (&forall;) : Benar jika semua elemen memenuhi syarat tertentu</p>
-        <p>Eksistensial (&exist;) : Benar jika ada setidaknya satu elemen yang memenuhi syarat tertentu</p>
+     
 
         <!-- Konjungsi -->
         <p><b>2. Konjungsi (&#8743;) (AND)</b></p>
@@ -86,29 +83,49 @@
 
         </ul>
 
-        <h2><b><u>Hukum De Morgan</u> </b></h2>
-        <p>Hukum De Morgan untuk negasi dari operasi AND (konjungsi) menyatakan bahwa ingkaran dari dua pernyataan yang
-            dihubungkan dengan kata "dan" sama dengan gabungan ingkaran dari masing-masing pernyataan tersebut
-            menggunakan kata "atau".</p>
-        <p>Contoh : </p>
+
+        <p><b>3. Disjungsi (&#8744;) (OR)</b></p>
+        <p>Disjungsi (logika OR) adalah operator logika yang menggabungkan dua proposisi dengan kata hubung "atau".</p>
+        <p>Disjungsi (p &#8744; q) bernilai BENAR jika minimal salah satu dari proposisi penyusunnya bernilai BENAR.</p>
+        <p>Contoh :</p>
         <ul>
-            <li> Jika ada &not; (P &#8743; Q ) maka berdasarkan hukum de morgan menjadi -> &not; P ∨ &not; Q </li>
+            <li><i>P</i>: "Budi boleh membawa motor." (Benar)</li>
+            <li><i>Q</i>: "Budi boleh berjalan kaki." (Benar)</li>
+            <li><i>P &#8744; Q:</i> "Budi boleh membawa motor atau Budi boleh berjalan kaki"</li>
         </ul>
 
-        <h2>
-            <b>
-                <u>
-                    Hukum Idempoten
-                </u>
-            </b>
-        </h2>
-        <p>Hukum Idempoten itu konsepnya jauh lebih gampang lagi, cok! Intinya adalah "operasi yang tidak mengubah
-            nilai", mau dilakukan berapa kali pun hasilnya tetap sama saja.</p>
-        <p>Contoh : </p>
+        <p><b>4. Implikasi (&#8594;) (IF-THEN)</b></p>
+        <p>Implikasi (logika IF... THEN... / Jika... Maka...) adalah operator logika yang menghubungkan dua proposisi dalam bentuk hubungan sebab-akibat atau syarat-hasil.</p>
+        <p>Bentuk Umum :</p>
         <ul>
-            <li>Jika P &#8743; P maka berdasarkan hukum Idempoten
-                adalah karena hasil penyataan itu sendiri yaitu P</li>
+            <li>Jika hari hujan, maka jalanan basah.</li>
+            <li>Jika budi berenang , maka baju Budi akan basah</li>
+            <li>Jika lampu menyala, maka ruangan terang</li>
         </ul>
+
+        <p>Bentuk Operator Logika :</p>
+        <ul>
+            <li>P &#8594; Q</li>
+        </ul>
+
+        <p><b>5. Biimplikasi (&#8596;) (IF AND ONLY IF)</b></p>
+        <p>Biimplikasi (logika IF AND ONLY IF) adalah operator logika yang menghubungkan dua proposisi dalam bentuk hubungan keduanya saling mempengaruhi atau ekuivalen.</p>
+        <p>Biimplikasi bernilai BENAR jika kedua proposisi penyusunnya memiliki nilai kebenaran yang SAMA.</p>
+        <p>Bentuk Umum :</p>
+        <ul>
+            <li>Motor hanya menyala jika dan hanya jika ada kunci motor</li>
+            <li>Lampu hanya menyala jika dan hanya jika ada sumber tenaga listrik</li>
+            <li>Akun hanya akan bisa diakses jika dan hanya jika memasukkan password yang benar</li>
+        </ul>
+
+        <p>Bentuk Logika</p>
+        <ul>
+            <li>P &#8596; Q</li>
+        </ul>
+
+
+
+       
     </section>
 
     <section id="komutatif">
@@ -166,6 +183,37 @@
         </ul>
 
         
+    </section>
+    <section id="hukum">
+         <h2><b><u>Hukum De Morgan</u> </b></h2>
+        <p>Hukum De Morgan untuk negasi dari operasi AND (konjungsi) menyatakan bahwa ingkaran dari dua pernyataan yang
+            dihubungkan dengan kata "dan" sama dengan gabungan ingkaran dari masing-masing pernyataan tersebut
+            menggunakan kata "atau".</p>
+        <p>Contoh : </p>
+        <ul>
+            <li> Jika ada &not; (P &#8743; Q ) maka berdasarkan hukum de morgan menjadi -> &not; P ∨ &not; Q </li>
+        </ul>
+
+        <h2>
+            <b>
+                <u>
+                    Hukum Idempoten
+                </u>
+            </b>
+        </h2>
+        <p>Hukum Idempoten itu konsepnya jauh lebih gampang lagi, cok! Intinya adalah "operasi yang tidak mengubah
+            nilai", mau dilakukan berapa kali pun hasilnya tetap sama saja.</p>
+        <p>Contoh : </p>
+        <ul>
+            <li>Jika P &#8743; P maka berdasarkan hukum Idempoten
+                adalah karena hasil penyataan itu sendiri yaitu P</li>
+        </ul>
+    </section>
+    <section id="kuantor">
+           <p><b>Kuantor (Universal : &forall;) , (Eksistensial : &exist;)</b></p>
+
+        <p>Universal (&forall;) : Benar jika semua elemen memenuhi syarat tertentu</p>
+        <p>Eksistensial (&exist;) : Benar jika ada setidaknya satu elemen yang memenuhi syarat tertentu</p>
     </section>
 
 

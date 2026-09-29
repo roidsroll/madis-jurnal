@@ -1,0 +1,46 @@
+.mainbody{
+    font-family: Google Sans, sans-serif;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+/**
+ * Header Style
+ */
+
+.header{
+    padding: 7px 40px;
+    background-color: #CE2626;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.text-bengcall{
+    cursor: pointer;
+}
+
+.div-menuright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div-menuright div{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 11px;
+    border: none;
+    transition: 0.15s;
+    margin: 5px;  
+}
+.div-menuright div:hover{
+    background-color: white;
+    color: #CE2626;
+}
+.div-menuright div:active{
+    color: white;
+    background-color: #CE2626;
+}
