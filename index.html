@@ -5,18 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matematika Diskrit</title>
-   
+    <link rel="dns-prefetch" href="//translate.googleapis.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7/css/flag-icons.min.css">
+    <style>
+        .fi{width:1.4em;line-height:1em;border-radius:2px}
+        #i18n-flag{font-size:16px}
+        .i18n-wrap {
+            position: fixed;
+            top: 12px;
+            right: 12px;
+            z-index: 9999;
+            font-family: system-ui, sans-serif
+        }
+
+        #i18n-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            min-height: 44px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 14px
+        }
+
+        #i18n-btn:focus-visible {
+            outline: 2px solid #1a73e8;
+            outline-offset: 2px
+        }
+
+        #i18n-list {
+            list-style: none;
+            margin: 6px 0 0;
+            padding: 4px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            max-height: 240px;
+            overflow: auto;
+            min-width: 160px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .12)
+        }
+
+        #i18n-list li button {
+            width: 100%;
+            text-align: left;
+            padding: 10px 12px;
+            min-height: 44px;
+            border: 0;
+            background: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        #i18n-list li button:hover,
+        #i18n-list li button[aria-selected="true"] {
+            background: #eef3fd
+        }
+
+        #i18n-btn.loading {
+            opacity: .6;
+            pointer-events: none
+        }
+    </style>
 </head>
 
 <body>
+    <div class="i18n-wrap" data-no-i18n>
+        <button id="i18n-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span id="i18n-flag" class="fi fi-id" aria-hidden="true"></span> <span id="i18n-label">Indonesia</span> <span aria-hidden="true">▾</span>
+        </button>
+        <ul id="i18n-list" role="listbox" hidden></ul>
+    </div>
     <h1>Matematika Diskrit</h1>
-    <p>Page created by: Rio Puji Nugroho &copy; 2026</p> <p id="last-updated">Last Updated: <span id="commit-date">Loading...</span></p>
+    <p>Page created by: Rio Puji Nugroho &copy; 2026</p>
+    <p id="last-updated">Last Updated: <span id="commit-date">Loading...</span></p>
     <!-- Tempat label tanggal akan ditampilkan -->
-    
+
 
     <!-- Navigasi -->
     <a href="#Proposisi">Proposisi</a> | <a href="#operator-logika">Operator Logika</a> | <a
-        href="true-table.html">Tabel Kebenaran</a> | <a href="#komutatif">Hukum Komutatif</a> | <a href="#kuantor">Kuantor</a> | <a href="#hukum">Hukum De Morgan</a>
+        href="true-table.html">Tabel Kebenaran</a> | <a href="#komutatif">Hukum Komutatif</a> | <a
+        href="#kuantor">Kuantor</a> | <a href="#hukum">Hukum De Morgan</a>
     <hr>
 
     <section id="Proposisi">
@@ -63,7 +140,7 @@
             <li>Pernyataan 2 : "Saya membawa payung."</li>
             <li>Negasi dari Pernyataan 2 : "Saya tidak membawa payung."</li>
         </ul>
-     
+
 
         <!-- Konjungsi -->
         <p><b>2. Konjungsi (&#8743;) (AND)</b></p>
@@ -95,7 +172,8 @@
         </ul>
 
         <p><b>4. Implikasi (&#8594;) (IF-THEN)</b></p>
-        <p>Implikasi (logika IF... THEN... / Jika... Maka...) adalah operator logika yang menghubungkan dua proposisi dalam bentuk hubungan sebab-akibat atau syarat-hasil.</p>
+        <p>Implikasi (logika IF... THEN... / Jika... Maka...) adalah operator logika yang menghubungkan dua proposisi
+            dalam bentuk hubungan sebab-akibat atau syarat-hasil.</p>
         <p>Bentuk Umum :</p>
         <ul>
             <li>Jika hari hujan, maka jalanan basah.</li>
@@ -109,7 +187,8 @@
         </ul>
 
         <p><b>5. Biimplikasi (&#8596;) (IF AND ONLY IF)</b></p>
-        <p>Biimplikasi (logika IF AND ONLY IF) adalah operator logika yang menghubungkan dua proposisi dalam bentuk hubungan keduanya saling mempengaruhi atau ekuivalen.</p>
+        <p>Biimplikasi (logika IF AND ONLY IF) adalah operator logika yang menghubungkan dua proposisi dalam bentuk
+            hubungan keduanya saling mempengaruhi atau ekuivalen.</p>
         <p>Biimplikasi bernilai BENAR jika kedua proposisi penyusunnya memiliki nilai kebenaran yang SAMA.</p>
         <p>Bentuk Umum :</p>
         <ul>
@@ -125,11 +204,11 @@
 
 
 
-       
+
     </section>
 
     <section id="komutatif">
-         <!-- Komutatif -->
+        <!-- Komutatif -->
 
         <h2><u>Hukum Komutatif , Asosiatif ,dan Distributif</u></h2>
 
@@ -142,7 +221,7 @@
             <li><b>Contoh Ekspresi Kiri (p &and; q):</b> "Hari ini hujan <b>DAN</b> saya membawa payung."</li>
             <li><b>Contoh Ekspresi Kanan (q &and; p):</b> "Saya membawa payung <b>DAN</b> hari ini hujan."</li>
             <li><b>Kesimpulan:</b> Kedua pernyataan di atas memiliki nilai yang sama atau <b>EKUIVALEN</b>.</li>
-          
+
         </ul>
 
         <p>Bentuk Umum : </p>
@@ -153,23 +232,25 @@
 
 
         <p><b>Hukum Asosiatif (Mengelompokkan)</b></p>
-        <p>Sifat operasi hitung yang menyatakan bahwa pengelompokan urutan pengerjaan tidak akan mengubah hasil akhir, asalkan operasi yang digunakan sama.</p>
+        <p>Sifat operasi hitung yang menyatakan bahwa pengelompokan urutan pengerjaan tidak akan mengubah hasil akhir,
+            asalkan operasi yang digunakan sama.</p>
 
         <p>Bentuk Umum :</p>
         <ul>
             <li>Perjumlahan : (a + b) + c = a + (b + c)</li>
-            <li>Perkalian :  (a x b) x c = a x (b x c)</li>
+            <li>Perkalian : (a x b) x c = a x (b x c)</li>
         </ul>
 
         <p>Bentuk Proposisi :</p>
         <ul>
             <li>Asosisatif Negasi (NOT): (P &not; Q) &not; R = P &not; (Q &not; R) </li>
-            <li>Asosiatif Konjungsi (AND): (P &#8743; Q) &#8743; R = P &#8743; (Q &#8743; R)  </li>
+            <li>Asosiatif Konjungsi (AND): (P &#8743; Q) &#8743; R = P &#8743; (Q &#8743; R) </li>
             <li>Catatan : Hukum asosiatif tidak berlaku untuk operator logika Implikasi dan Biimplikasi</li>
         </ul>
 
         <p><b>Hukum Distributif (Penyebaran)</b></p>
-        <p>Sifat operasi hitung yang menyatakan bahwa suatu operasi dapat disebarkan (didistribusikan) ke dalam operasi lainnya yang berada di dalam tanda kurung.</p>
+        <p>Sifat operasi hitung yang menyatakan bahwa suatu operasi dapat disebarkan (didistribusikan) ke dalam operasi
+            lainnya yang berada di dalam tanda kurung.</p>
 
         <p>Bentuk Umum :</p>
         <ul>
@@ -182,10 +263,10 @@
             <li>p &#8744; (q &#8743; r) = (p &#8744; q) &#8744; (p &#8743; r)</li>
         </ul>
 
-        
+
     </section>
     <section id="hukum">
-         <h2><b><u>Hukum De Morgan</u> </b></h2>
+        <h2><b><u>Hukum De Morgan</u> </b></h2>
         <p>Hukum De Morgan untuk negasi dari operasi AND (konjungsi) menyatakan bahwa ingkaran dari dua pernyataan yang
             dihubungkan dengan kata "dan" sama dengan gabungan ingkaran dari masing-masing pernyataan tersebut
             menggunakan kata "atau".</p>
@@ -210,7 +291,7 @@
         </ul>
     </section>
     <section id="kuantor">
-           <p><b>Kuantor (Universal : &forall;) , (Eksistensial : &exist;)</b></p>
+        <p><b>Kuantor (Universal : &forall;) , (Eksistensial : &exist;)</b></p>
 
         <p>Universal (&forall;) : Benar jika semua elemen memenuhi syarat tertentu</p>
         <p>Eksistensial (&exist;) : Benar jika ada setidaknya satu elemen yang memenuhi syarat tertentu</p>
@@ -219,7 +300,105 @@
 
 
 
- <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script>
+        (function () {
+            var LANGS = [["id","Indonesia","id"],["en","English","us"],["ar","العربية","sa"],["zh-CN","中文","cn"],["es","Español","es"],["fr","Français","fr"],["de","Deutsch","de"],["ja","日本語","jp"],["ko","한국어","kr"],["pt","Português","pt"],["ru","Русский","ru"],["hi","हिन्दी","in"]];
+            var KEY = "i18n-lang", CACHE = "i18n-cache-v1";
+            var btn = document.getElementById("i18n-btn"), label = document.getElementById("i18n-label"), list = document.getElementById("i18n-list"), flag = document.getElementById("i18n-flag");
+            var orig = new Map(), nodes = [], cache = {};
+            try { cache = JSON.parse(localStorage.getItem(CACHE) || "{}") } catch (e) { cache = {} }
+            function saveCache() { try { localStorage.setItem(CACHE, JSON.stringify(cache)) } catch (e) { } }
+            function collect() {
+                nodes = []; orig.clear();
+                var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+                    acceptNode: function (n) {
+                        var p = n.parentElement;
+                        if (!p) return NodeFilter.FILTER_REJECT;
+                        if (p.closest("[data-no-i18n],script,style")) return NodeFilter.FILTER_REJECT;
+                        if (!n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+                        return NodeFilter.FILTER_ACCEPT;
+                    }
+                });
+                var n, i = 0;
+                while (n = w.nextNode()) {
+                    if (!n._i18n) { n._i18n = "t" + (i++); orig.set(n._i18n, n.nodeValue) }
+                    nodes.push(n);
+                }
+            }
+            collect();
+            function renderList(cur) {
+                list.innerHTML = "";
+                LANGS.forEach(function (l) {
+                    var li = document.createElement("li");
+                    var b = document.createElement("button");
+                    b.type = "button"; b.role = "option"; b.dataset.lang = l[0];
+                    var span = document.createElement("span");
+                    span.className = "fi fi-" + l[2];
+                    b.appendChild(span);
+                    b.appendChild(document.createTextNode(" " + l[1]));
+                    if (l[0] === cur) { b.setAttribute("aria-selected", "true"); flag.className = "fi fi-" + l[2] }
+                    b.onclick = function () { setLang(l[0], l[1]); toggle(false) };
+                    li.appendChild(b); list.appendChild(li);
+                });
+            }
+            function toggle(open) {
+                var will = open !== undefined ? open : list.hidden;
+                list.hidden = !will; btn.setAttribute("aria-expanded", String(will));
+                if (will) { var s = list.querySelector("[aria-selected=true]"); if (s) s.focus() }
+            }
+            btn.onclick = function () { toggle() };
+            document.addEventListener("click", function (e) { if (!e.target.closest(".i18n-wrap")) toggle(false) });
+            document.addEventListener("keydown", function (e) { if (e.key === "Escape") toggle(false) });
+            async function batchTranslate(texts, tl) {
+                var out = [], chunk = [], len = 0;
+                for (var k = 0; k < texts.length; k++) { chunk.push(texts[k]); len += texts[k].length; if (chunk.length >= 20 || len > 4000 || k === texts.length - 1) { out.push(chunk); chunk = []; len = 0 } }
+                var res = [];
+                for (var c = 0; c < out.length; c++) {
+                    var q = out[c].map(function (t) { return encodeURIComponent(t) }).join("\n---\n");
+                    var url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=id&tl=" + tl + "&dt=t&q=" + encodeURIComponent(out[c].join("\n---\n"));
+                    var r = await fetch(url).then(function (r) { return r.json() });
+                    var joined = r[0].map(function (x) { return x[0] }).join("");
+                    res = res.concat(joined.split("\n---\n"));
+                }
+                return res;
+            }
+            async function setLang(code, name) {
+                label.textContent = name; btn.classList.add("loading");
+                var fcode = "id"; LANGS.forEach(function(l){if(l[0]===code)fcode=l[2]});
+                flag.className = "fi fi-" + fcode;
+                try { localStorage.setItem(KEY, code) } catch (e) { }
+                if (code === "id") {
+                    nodes.forEach(function (n) { n.nodeValue = orig.get(n._i18n) });
+                    btn.classList.remove("loading"); renderList(code); return;
+                }
+                var need = [], needNodes = [];
+                nodes.forEach(function (n) {
+                    var key = code + "||" + orig.get(n._i18n);
+                    if (cache[key]) n.nodeValue = cache[key];
+                    else { need.push(orig.get(n._i18n)); needNodes.push(n) }
+                });
+                if (!need.length) { btn.classList.remove("loading"); renderList(code); return }
+                try {
+                    var tr = await batchTranslate(need, code);
+                    tr.forEach(function (t, i) {
+                        var key = code + "||" + need[i];
+                        cache[key] = t; needNodes[i].nodeValue = t;
+                    });
+                    saveCache();
+                } catch (e) { }
+                btn.classList.remove("loading"); renderList(code);
+            }
+            var init = "id", initName = "Indonesia";
+            try { init = localStorage.getItem(KEY) || "id" } catch (e) { }
+            LANGS.forEach(function (l) { if (l[0] === init) initName = l[1] });
+            renderList(init);
+            if (init !== "id") {
+                if ("requestIdleCallback" in window) requestIdleCallback(function () { setLang(init, initName) });
+                else setTimeout(function () { setLang(init, initName) }, 0);
+            }
+        })();
+    </script>
 
 
 </body>
