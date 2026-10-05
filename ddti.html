@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar Dasar Teknologi Informasi</title>
+    <link rel="dns-prefetch" href="//translate.googleapis.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7/css/flag-icons.min.css">
+    <style>
+        .fi{width:1.4em;line-height:1em;border-radius:2px}
+        #i18n-flag{font-size:16px}
+        .i18n-wrap {
+            position: fixed;
+            top: 12px;
+            right: 12px;
+            z-index: 9999;
+            font-family: system-ui, sans-serif
+        }
+
+        #i18n-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            min-height: 44px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 14px
+        }
+
+        #i18n-btn:focus-visible {
+            outline: 2px solid #1a73e8;
+            outline-offset: 2px
+        }
+
+        #i18n-list {
+            list-style: none;
+            margin: 6px 0 0;
+            padding: 4px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            max-height: 240px;
+            overflow: auto;
+            min-width: 160px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .12)
+        }
+
+        #i18n-list li button {
+            width: 100%;
+            text-align: left;
+            padding: 10px 12px;
+            min-height: 44px;
+            border: 0;
+            background: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        #i18n-list li button:hover,
+        #i18n-list li button[aria-selected="true"] {
+            background: #eef3fd
+        }
+
+        #i18n-btn.loading {
+            opacity: .6;
+            pointer-events: none
+        }
+    </style>
+</head>
+
+<body>
+    <div class="i18n-wrap" data-no-i18n>
+        <button id="i18n-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span id="i18n-flag" class="fi fi-id" aria-hidden="true"></span> <span id="i18n-label">Indonesia</span> <span aria-hidden="true">▾</span>
+        </button>
+        <ul id="i18n-list" role="listbox" hidden></ul>
+    </div>
+
+    <h1>Dasar Dasar Teknologi Informasi</h1>
+
+
+
+    <p>Page created by: Rio Puji Nugroho &copy; 2026</p>
+    <p id="last-updated">Last Updated: <span id="commit-date">Loading...</span></p>
+    <!-- Tempat label tanggal akan ditampilkan -->
+
+
+    <!-- Navigasi -->
+    <p><b>Halaman :</b> <a href="index.html">Matematika Diskrit</a> | <a href="ddti.html">Dasar Dasar Teknologi Informasi</a> |</p>
+
+    <p><b>Bagian :</b> <a href="#teknologi-informasi">Teknologi Informasi</a> | <a href="#komputasi">Komputasi</a> | <a href="#unsur-sistem-digital">Unsur Sistem Digital</a> | </p>
+
+
+    <hr>
+
+
+
+    <!-- Teknologi Informasi -->
+    <section id="teknologi-informasi">
+
+        <h2><u>Teknologi Informasi</u></h2>
+
+    <p><b>Menurut Williams dan Sawyer (2003)</b></p>
+    <p>Pengertian teknologi informasi menurut Williams dan Sawyer (2003) adalah teknologi yang menggabungkan komputasi
+        (komputer) dengan jalur komunikasi kecepatan tinggi yang membawa data, suara, dan video.</p>
+
+    <p><b>Menurut Brown, DeHayes, Hoffer, dan Perkins (2005)</b></p>
+    <p>Teknologi informasi menurut Brown, DeHayes, Hoffer, dan Perkins (2005) adalah kombinasi dari teknologikomputer
+        yang tersusun dari perangkat keras dan perangkat lunak untuk memproses dan juga menyimpan teknologi komunikasi
+        informasi untuk melakukan distribusi informasi</p>
+
+    <p><b>Menurut BNET Business Dictionary (2008)</b></p>
+    <p>Teknologi komunikasi adalah sistem elektronik yang digunakan untuk berkomunikasi antar individu atau kelompok
+        orang. Teknologi komunikasi menfasilitasi komunikasi antar individu atau kelompok orang yang tidak bertemu
+        secara fisik di lokasi yang sama</p>
+
+    <p><b>Source</b> : Indriani, E., & Husnun Salma, N. D. H. S. (2021). The Effect of Using Information and Communication
+        Technology On The Performance of SMEs in Bandung During The Covid-19 Pandemic.
+        International Journal Administration, Business & Organization, 2(3), 10-22. https://doi.org/10.61242/ijabo.21.14
+    </p>
+    </section>
+
+    
+    <!-- Apa itu komputasi / computing ? -->
+     <section id="komputasi">
+        <h2><u>Apa itu komputasi / computing ?</u></h2>
+        <p>Komputasi adalah algoritma yang digunakan untuk menemukan cara dalam memecahkan masalah dari sebuah data input. Data input di sini adalah masukan yang berasal dari luar lingkungan sistem.</p>
+
+        <ul>
+            <li>Merepresentasikan informasi</li>
+            <li>Memproses data</li>
+            <li>Menyimpan informasi</li>
+            <li>Melakukan perhitungan</li>
+            <li>Berkomunikasi dengan sistem lain</li>
+            <li>Menghasilkan suatu keluaran atau tindakan</li>
+        </ul>
+
+        <p><b>Contoh dari komputasi :</b></p>
+        <ul>
+            <li>Kalkulator</li>
+            <li>Komputer</li>
+            <li>Sistem Rekomendasi Video</li>
+            <li>SIAKAD</li>
+            <li>Server</li>
+            <li>Smart TV</li>
+        </ul>
+
+        <p><b>Source </b>: Munawaroh, M., & Ratama, N. Model Komputasi dan Kompleksitas Algoritma. Google Books.</p>
+     </section>
+  
+     <section id="unsur-sistem-digital">
+         <h2><u>Unsur dari Sistem Digital / Sistem Informasi</u></h2>
+    <ul>
+        <li>People : Siapa yang menggunakan dan kelola sistem ?  </li>
+        <li>Hardware : Perangkat keras apa yang digunakan ?</li>
+        <li>Software : Perangkat lunak apa yang digunakan ?</li>
+        <li>Network : Bagaimana perangkat salaing berkomunikasi? </li>
+        <li>Data : Data / informasi apa yang diproses ?</li>
+        <li>Processes : langkah ata aturan  apa yang dijalankan</li>
+    </ul>
+
+    <p><b>Contoh : Website UMKM</b></p>
+    <ul>
+        <li>People : Pedagan dan pembeli</li>
+        <li>Hardware : Smartphone , tablet atau laptop</li>
+        <li>Software : Aplikasi berupa website umkm</li>
+        <li>Network :  Koneksi internet (Wi-Fi/Data Seluler) dan protokol HTTP/HTTPS.</li>
+        <li>Data : Data produk , stok Barang , struk transaksi , data untung / rugi </li>
+        <li>Processes : Proses pemesanan, pembayaran, dan pengiriman barang</li>
+    </ul>
+
+</section>
+    
+
+<h2><u></u></h2>
+
+
+
+    
+
+
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+    <script>
+        (function () {
+            var LANGS = [["id","Indonesia","id"],["en","English","us"],["ar","العربية","sa"],["zh-CN","中文","cn"],["es","Español","es"],["fr","Français","fr"],["de","Deutsch","de"],["ja","日本語","jp"],["ko","한국어","kr"],["pt","Português","pt"],["ru","Русский","ru"],["hi","हिन्दी","in"]];
+            var KEY = "i18n-lang", CACHE = "i18n-cache-v1";
+            var btn = document.getElementById("i18n-btn"), label = document.getElementById("i18n-label"), list = document.getElementById("i18n-list"), flag = document.getElementById("i18n-flag");
+            var orig = new Map(), nodes = [], cache = {};
+            try { cache = JSON.parse(localStorage.getItem(CACHE) || "{}") } catch (e) { cache = {} }
+            function saveCache() { try { localStorage.setItem(CACHE, JSON.stringify(cache)) } catch (e) { } }
+            function collect() {
+                nodes = []; orig.clear();
+                var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+                    acceptNode: function (n) {
+                        var p = n.parentElement;
+                        if (!p) return NodeFilter.FILTER_REJECT;
+                        if (p.closest("[data-no-i18n],script,style")) return NodeFilter.FILTER_REJECT;
+                        if (!n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+                        return NodeFilter.FILTER_ACCEPT;
+                    }
+                });
+                var n, i = 0;
+                while (n = w.nextNode()) {
+                    if (!n._i18n) { n._i18n = "t" + (i++); orig.set(n._i18n, n.nodeValue) }
+                    nodes.push(n);
+                }
+            }
+            collect();
+            function renderList(cur) {
+                list.innerHTML = "";
+                LANGS.forEach(function (l) {
+                    var li = document.createElement("li");
+                    var b = document.createElement("button");
+                    b.type = "button"; b.role = "option"; b.dataset.lang = l[0];
+                    var span = document.createElement("span");
+                    span.className = "fi fi-" + l[2];
+                    b.appendChild(span);
+                    b.appendChild(document.createTextNode(" " + l[1]));
+                    if (l[0] === cur) { b.setAttribute("aria-selected", "true"); flag.className = "fi fi-" + l[2] }
+                    b.onclick = function () { setLang(l[0], l[1]); toggle(false) };
+                    li.appendChild(b); list.appendChild(li);
+                });
+            }
+            function toggle(open) {
+                var will = open !== undefined ? open : list.hidden;
+                list.hidden = !will; btn.setAttribute("aria-expanded", String(will));
+                if (will) { var s = list.querySelector("[aria-selected=true]"); if (s) s.focus() }
+            }
+            btn.onclick = function () { toggle() };
+            document.addEventListener("click", function (e) { if (!e.target.closest(".i18n-wrap")) toggle(false) });
+            document.addEventListener("keydown", function (e) { if (e.key === "Escape") toggle(false) });
+            async function batchTranslate(texts, tl) {
+                var out = [], chunk = [], len = 0;
+                for (var k = 0; k < texts.length; k++) { chunk.push(texts[k]); len += texts[k].length; if (chunk.length >= 20 || len > 4000 || k === texts.length - 1) { out.push(chunk); chunk = []; len = 0 } }
+                var res = [];
+                for (var c = 0; c < out.length; c++) {
+                    var q = out[c].map(function (t) { return encodeURIComponent(t) }).join("\n---\n");
+                    var url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=id&tl=" + tl + "&dt=t&q=" + encodeURIComponent(out[c].join("\n---\n"));
+                    var r = await fetch(url).then(function (r) { return r.json() });
+                    var joined = r[0].map(function (x) { return x[0] }).join("");
+                    res = res.concat(joined.split("\n---\n"));
+                }
+                return res;
+            }
+            async function setLang(code, name) {
+                label.textContent = name; btn.classList.add("loading");
+                var fcode = "id"; LANGS.forEach(function(l){if(l[0]===code)fcode=l[2]});
+                flag.className = "fi fi-" + fcode;
+                try { localStorage.setItem(KEY, code) } catch (e) { }
+                if (code === "id") {
+                    nodes.forEach(function (n) { n.nodeValue = orig.get(n._i18n) });
+                    btn.classList.remove("loading"); renderList(code); return;
+                }
+                var need = [], needNodes = [];
+                nodes.forEach(function (n) {
+                    var key = code + "||" + orig.get(n._i18n);
+                    if (cache[key]) n.nodeValue = cache[key];
+                    else { need.push(orig.get(n._i18n)); needNodes.push(n) }
+                });
+                if (!need.length) { btn.classList.remove("loading"); renderList(code); return }
+                try {
+                    var tr = await batchTranslate(need, code);
+                    tr.forEach(function (t, i) {
+                        var key = code + "||" + need[i];
+                        cache[key] = t; needNodes[i].nodeValue = t;
+                    });
+                    saveCache();
+                } catch (e) { }
+                btn.classList.remove("loading"); renderList(code);
+            }
+            var init = "id", initName = "Indonesia";
+            try { init = localStorage.getItem(KEY) || "id" } catch (e) { }
+            LANGS.forEach(function (l) { if (l[0] === init) initName = l[1] });
+            renderList(init);
+            if (init !== "id") {
+                if ("requestIdleCallback" in window) requestIdleCallback(function () { setLang(init, initName) });
+                else setTimeout(function () { setLang(init, initName) }, 0);
+            }
+        })();
+    </script>
+
+</html>
